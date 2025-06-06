@@ -2,18 +2,19 @@ body {
 	margin: 0px;
 }
 
-img {
+.img-class {
 	height: 6vw;
 	width: auto;
 }
 
-.bigImage-background {
+main {
 	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	width: 100vw;
 	height: 100vh;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	display: flex;
+	justify-content: center;
 }
 
 .image-set-container {
@@ -29,7 +30,7 @@ img {
 	padding: 8px;
 	width: fit-content;
 	position: absolute;
-	bottom: 40px;
+	bottom: 20px;
 }
 
 .buttons-navigation-container {
@@ -44,12 +45,17 @@ img {
 }
 
 button {
-	background-color: #f1f1f1;
-	color: #5f5f5f;
+	background-color: #282936;
+	color: #f1f1f1;
 	border: none;
 	border-radius: 50%;
 	padding-top: 1.2%;
 	padding-bottom: 1%;
 	padding-right: 1.5%;
 	padding-left: 1.5%;
+}
+
+.big-images {
+	height: auto;
+	width: 100vw;
 }

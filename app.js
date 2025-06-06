@@ -3,14 +3,14 @@ console.log('Hello New York!');
 const bigImageContainer = document.getElementById('bigImageContainer');
 const images = document.getElementById('images').children;
 
-let currentImageIndex = 0;
+//let currentImageIndex = 0;
 
 function selectImages() {
 	for (const image of images) {
 		image.addEventListener('click', function () {
 			bigImages(image);
 
-			currentImageIndex = index;
+			//currentImageIndex = index;
 		});
 	}
 }
@@ -24,6 +24,8 @@ function bigImages(img) {
 
 	bigImage.src = img.src;
 	bigImage.alt = img.alt;
+
+	bigImage.classList.add('big-images');
 
 	bigImageContainer.appendChild(bigImage);
 }
