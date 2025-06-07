@@ -1,3 +1,18 @@
+@media (min-width: 300px) and (max-width: 900px) {
+	body {
+		background-color: #505160;
+	}
+
+	#bigImageContainer {
+		width: fit-content;
+	}
+
+	.big-images {
+		height: 100vh;
+		width: auto;
+	}
+}
+
 body {
 	margin: 0px;
 }
